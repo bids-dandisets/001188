@@ -3,1205 +3,1205 @@
     "issues": [
       {
         "code": "UNKNOWN_BIDS_VERSION",
+        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.dataset.UnknownVersion",
-        "severity": "ignore"
+        "rule": "rules.checks.dataset.UnknownVersion"
       },
       {
         "code": "README_FILE_MISSING",
+        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.hints.ReadmeFileMissing",
-        "severity": "ignore"
+        "rule": "rules.checks.hints.ReadmeFileMissing"
       },
       {
         "code": "TOO_FEW_AUTHORS",
+        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.hints.TooFewAuthors",
-        "severity": "ignore"
+        "rule": "rules.checks.hints.TooFewAuthors"
       },
       {
         "code": "JSON_KEY_REQUIRED",
         "subCode": "Name",
-        "location": "/dataset_description.json",
         "severity": "error",
-        "rule": "rules.dataset_metadata.dataset_description",
-        "issueMessage": "Field description: Name of the dataset.\n"
+        "location": "/dataset_description.json",
+        "issueMessage": "Field description: Name of the dataset.\n",
+        "rule": "rules.dataset_metadata.dataset_description"
       },
       {
         "code": "JSON_KEY_RECOMMENDED",
         "subCode": "License",
-        "location": "/dataset_description.json",
         "severity": "warning",
-        "rule": "rules.dataset_metadata.dataset_description",
-        "issueMessage": "Field description: The license for the dataset.\nThe use of license name abbreviations is RECOMMENDED for specifying a license\n(see [Licenses](SPEC_ROOT/appendices/licenses.md)).\nThe corresponding full license text MAY be specified in an additional\n`LICENSE` file.\n"
+        "location": "/dataset_description.json",
+        "issueMessage": "Field description: The license for the dataset.\nThe use of license name abbreviations is RECOMMENDED for specifying a license\n(see [Licenses](SPEC_ROOT/appendices/licenses.md)).\nThe corresponding full license text MAY be specified in an additional\n`LICENSE` file.\n",
+        "rule": "rules.dataset_metadata.dataset_description"
       },
       {
         "code": "JSON_KEY_RECOMMENDED",
         "subCode": "GeneratedBy",
-        "location": "/dataset_description.json",
         "severity": "warning",
-        "rule": "rules.dataset_metadata.dataset_description",
-        "issueMessage": "Field description: Used to specify provenance of the dataset.\n"
+        "location": "/dataset_description.json",
+        "issueMessage": "Field description: Used to specify provenance of the dataset.\n",
+        "rule": "rules.dataset_metadata.dataset_description"
       },
       {
         "code": "JSON_KEY_RECOMMENDED",
         "subCode": "SourceDatasets",
-        "location": "/dataset_description.json",
         "severity": "warning",
-        "rule": "rules.dataset_metadata.dataset_description",
-        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n"
+        "location": "/dataset_description.json",
+        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n",
+        "rule": "rules.dataset_metadata.dataset_description"
       },
       {
         "code": "NO_AUTHORS",
         "subCode": "Authors",
+        "severity": "warning",
         "location": "/dataset_description.json",
-        "severity": "warning",
-        "rule": "rules.dataset_metadata.dataset_authors",
-        "issueMessage": "Field description: List of individuals who contributed to the creation/curation of the dataset.\n"
+        "issueMessage": "Field description: List of individuals who contributed to the creation/curation of the dataset.\n",
+        "rule": "rules.dataset_metadata.dataset_authors"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH134/ses-FOV13+2023+04+13/ecephys/sub-BAYLORJH134_ses-FOV13+2023+04+13_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+08/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+08_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH134/ses-FOV11+2023+06+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+06+30_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+11/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+11_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH134/ses-FOV11+2023+04+30/ecephys/sub-BAYLORJH134_ses-FOV11+2023+04+30_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV13+2023+04+09/ecephys/sub-BAYLORJH130_ses-FOV13+2023+04+09_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH130/ses-FOV11+2023+06+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+06+07_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+28/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+28_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH130/ses-FOV12+2023+04+08/ecephys/sub-BAYLORJH130_ses-FOV12+2023+04+08_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+07+12/ecephys/sub-BAYLORJH130_ses-FOV11+2023+07+12_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH130/ses-FOV12+2023+06+17/ecephys/sub-BAYLORJH130_ses-FOV12+2023+06+17_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
+        "severity": "warning",
         "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+07/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+07_events.tsv",
-        "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "InstitutionName",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: The name of the institution in charge of the equipment that produced the\nmeasurements.\n",
+        "rule": "rules.sidecars.microephys.microephysInstitutionInformation"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "PowerLineFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: Frequency (in Hz) of the power grid at the geographical location of the\ninstrument (for example, `50` or `60`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SamplingFrequency",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_REQUIRED",
         "subCode": "SoftwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "error",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: [Object](https://www.json.org/json-en.html)\nof temporal software filters applied, or `\"n/a\"` if the data is\nnot available.\nEach key-value pair in the JSON object is a name of the filter and an object\nin which its parameters are defined as key-value pairs\n(for example, `{\"Anti-aliasing filter\":\n{\"half-amplitude cutoff (Hz)\": 500, \"Roll-off\": \"6dB/Octave\"}}`).\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "HardwareFilters",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysProcessing",
-        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: Object of temporal hardware filters applied, or `\"n/a\"` if the data is not\navailable. Each key-value pair in the JSON object is a name of the filter and\nan object in which its parameters are defined as key-value pairs.\nFor example, `{\"Highpass RC filter\": {\"Half amplitude cutoff (Hz)\":\n0.0159, \"Roll-off\": \"6dB/Octave\"}}`.\n",
+        "rule": "rules.sidecars.microephys.microephysProcessing"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_ecephys.nwb",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
+        "rule": "rules.sidecars.microephys.microephysSample"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_events.tsv",
         "severity": "warning",
-        "rule": "rules.sidecars.events.StimulusPresentation",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+        "location": "/sub-BAYLORJH130/ses-FOV11+2023+04+27/ecephys/sub-BAYLORJH130_ses-FOV11+2023+04+27_events.tsv",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
+        "rule": "rules.sidecars.events.StimulusPresentation"
       }
     ],
     "codeMessages": {
